@@ -1,7 +1,5 @@
 # Handwritten Malayalam OCR
 
-![Malayalam OCR Banner](https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Malayalam_Alphabet_Chart.svg/1200px-Malayalam_Alphabet_Chart.svg.png)
-
 ##  Overview
 
 This project presents a complete pipeline for Optical Character Recognition (OCR) of **handwritten Malayalam text** using deep learning. From scanned PDFs to editable Unicode text, this system performs PDF-to-image conversion, line/word/character segmentation, character recognition using CNNs, and structure-preserving text reconstruction.
@@ -57,8 +55,6 @@ Trained using:
 - Optimizer: `adam`
 - Epochs: 35
 - Accuracy achieved: **~92% on validation**
-
-![Model Accuracy](https://user-images.githubusercontent.com/placeholder/train-val-accuracy.png)
 
 ---
 
@@ -121,18 +117,26 @@ Reordered: ['ക', 'െ', 'ന്ത', 'ാ'] ➔ "കെന്താ"
 
 ---
 
-## 📅 Visual Summary
+## 🗕️ Visual Summary
 
-```mermaid
-graph TD
-A[PDF Input] --> B[Page Images]
-B --> C[Line Segmentation]
-C --> D[Word Segmentation]
-D --> E[Character Segmentation]
-E --> F[Image Normalization]
-F --> G[Model Prediction]
-G --> H[Reconstruction (via JSON)]
-H --> I[Unicode Text Output (.txt)]
+```
+PDF Input
+   ↓
+Page Images (converted using pdf2image)
+   ↓
+Line Segmentation
+   ↓
+Word Segmentation
+   ↓
+Character Segmentation
+   ↓
+CNN Model Prediction
+   ↓
+Text Reordering (using document_structure.json)
+   ↓
+Unicode Normalization (NFC)
+   ↓
+Final Output Text (.txt)
 ```
 
 ---
