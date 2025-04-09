@@ -1,0 +1,38 @@
+{
+    "line01": {
+        "word_1": [
+            "char_1.jpg",
+            "char_2.jpg",
+            "char_3.jpg",
+            "char_4.jpg"
+        ],
+        "word_2": [
+            "char_1.jpg",
+            "char_2.jpg",
+            "char_3.jpg",
+            "char_4.jpg",
+            "char_5.jpg",
+            "char_6.jpg"
+        ]
+    },
+    "line02": {
+        "word_1": [
+            "char_1.jpg",
+            "char_2.jpg",
+            "char_3.jpg",
+            "char_4.jpg",
+            "char_5.jpg",
+            "char_6.jpg",
+            "char_7.jpg"
+        ],
+        "word_2": [
+            "char_1.jpg",
+            "char_2.jpg",
+            "char_3.jpg",
+            "char_4.jpg",
+            "char_5.jpg",
+            "char_6.jpg",
+            "char_7.jpg"
+        ]
+    }
+}
